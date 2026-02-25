@@ -1,13 +1,10 @@
 /* extra styles for the page, to keep styles.css clean and organized */
+
 @font-face {
     font-family: 'gothamUltra';
-    src: url('Assets/fonts/gothamUltra.woff2') format('woff2');
-    font-display: swap;
-}
-@font-face {
+    src: url('../Assets/fonts/gothamUltra.otf') format('opentype');
     font-family: 'gothamRoundedL';
-    src: url('Assets/fonts/gothamRoundedL.woff2') format('woff2');
-    font-display: swap;
+    src: url('../Assets/fonts/gothamRoundedL.otf') format('opentype');
 }
 
 .system-status {
@@ -83,24 +80,30 @@ section.active {
 
 
 /* RESPONSIVE DESIGN */
-@media (max-width: 1024px) {
-
-    section {
-        padding: 120px 8%;
-    }
+@media (max-width: 768px) {
 
     #hero .container {
-        gap: 60px;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 2em;
     }
 
     .hero-image {
-        width: 320px;
-        height: 320px;
+        width: 240px;
+        height: 240px;
     }
 
-    .list-skills {
-        gap: 40px;
+    .data-grid div {
+        font-size: 15px;
     }
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 90px 6% !important;
+        min-height: auto !important;
+    }
+
 }
 
 
@@ -109,13 +112,28 @@ section.active {
 
     header {
         flex-direction: column;
-        gap: 10px;
+    }
+
+    header .logo {
+        margin-bottom: 0;
+        width: 65px;
+        height: 65px;
     }
     
     header nav {
         gap: 20px;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    #hero {
+        padding-top: 140px !important;
+    }
+
+    .system-status {
+        margin-top: 14px;
+        justify-content: center;
+        font-size: 13px;
     }
 
     #hero .container {
@@ -161,53 +179,105 @@ section.active {
 
 
 /* Mobile */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
 
-    section {
-        padding: 110px 5%;
+    header {
+        flex-direction: column;
+        padding: 15px 5%;
     }
 
-    h1 {
-        font-size: 22px;
-        margin-bottom: 40px;
+    header .logo {
+        margin-bottom: 10px;
     }
 
-    .hero-image {
-        width: 220px;
-        height: 220px;
+    header nav {
+        width: 100%;
+        justify-content: center;
+        gap: 18px;
+        flex-wrap: wrap;
     }
 
-    .data-grid div {
-        font-size: 15px;
+    header nav a {
+        font-size: 13px;
+        letter-spacing: 1px;
     }
+}
 
-    .about-me {
-        font-size: 14px;
-    }
+@media (max-width: 768px) {
 
-    .skill-list-item {
-        padding: 40px;
+    .my-projects-list {
+        display: block;
+        transform: none !important;
     }
 
     .my-projects-list dl {
+        min-width: 100%;
+        margin: 0 0 30px 0;
+    }
+
+    .project-indicators {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .about-me,
+    .resume-description,
+    .my-projects-list dd,
+    .contact-intro {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .skill-list-item {
         padding: 35px;
     }
 
-    .my-projects-list dt {
-        font-size: 18px;
-    }
-
-    .my-projects-list dd {
-        font-size: 14px;
-    }
-
     .contact-container {
-        padding: 40px;
+        padding: 40px 25px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .about-me {
+        font-size: 15px;
+        line-height: 1.8;
     }
 
-    .main-footer {
-        padding: 40px 8%;
+    .about-me br {
+        display: none;
+    }
+
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .about-me::before {
+        content: "";
+        width: 40px;
+        height: 2px;
+        background: var(--cyber-blue);
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        background: #f4f8fb url("Assets/bg_phone.png") center top / cover no-repeat fixed;
     }
 
 }
 
+@media (hover: none) {
+
+    *:hover {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+
+}

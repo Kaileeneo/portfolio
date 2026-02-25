@@ -1,13 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:wght@300;400;500;600&display=swap');
 @font-face {
     font-family: 'gothamUltra';
-    src: url('Assets/fonts/gothamUltra.woff2') format('woff2');
-    font-display: swap;
-}
-@font-face {
+    src: url('../Assets/fonts/gothamUltra.otf') format('opentype');
     font-family: 'gothamRoundedL';
-    src: url('Assets/fonts/gothamRoundedL.woff2') format('woff2');
-    font-display: swap;
+    src: url('../Assets/fonts/gothamRoundedL.otf') format('opentype');
 }
 
 :root {
@@ -161,8 +157,7 @@ section {
     display: block;
     font-size: 14px;
     font-family: 'gothamUltra', sans-serif;
-    font-weight: 600;
-    letter-spacing: 2px;
+    font-weight: 700;
     color: #7fcfff;
 }
 
@@ -574,8 +569,4 @@ section {
 .footer-copy {
     font-size: 13px;
     color: var(--text-primary);
-
 }
-
-
-

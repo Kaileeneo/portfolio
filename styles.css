@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Montserrat:wght@300;400;500;600&display=swap');
 @font-face {
     font-family: 'gothamUltra';
-    src: url('../Assets/fonts/gothamUltra.otf') format('opentype');
+    src: url('Assets/fonts/gothamUltra.otf') format('opentype');
+}
+@font-face {
     font-family: 'gothamRoundedL';
-    src: url('../Assets/fonts/gothamRoundedL.otf') format('opentype');
+    src: url('Assets/fonts/gothamRoundedL.otf') format('opentype');
 }
 
 :root {
@@ -569,4 +571,5 @@ section {
 .footer-copy {
     font-size: 13px;
     color: var(--text-primary);
+
 }

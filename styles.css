@@ -152,7 +152,6 @@ section {
     font-size: 18px;
     font-family: 'gothamRoundedL', sans-serif;
     margin-left: 1em;
-    letter-spacing: 2px;
     padding-right: 23px;
     border-bottom: 1px solid rgba(0,170,255,0.2);
     padding: 9px;
@@ -162,7 +161,8 @@ section {
     display: block;
     font-size: 14px;
     font-family: 'gothamUltra', sans-serif;
-    font-weight: 700;
+    font-weight: 600;
+    letter-spacing: 2px;
     color: #7fcfff;
 }
 
@@ -576,5 +576,6 @@ section {
     color: var(--text-primary);
 
 }
+
 
 

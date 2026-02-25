@@ -1,10 +1,12 @@
 /* extra styles for the page, to keep styles.css clean and organized */
-
 @font-face {
     font-family: 'gothamUltra';
-    src: url('../Assets/fonts/gothamUltra.otf') format('opentype');
+    src: url('Assets/fonts/gothamUltra.otf') format('opentype');
+}
+
+@font-face {
     font-family: 'gothamRoundedL';
-    src: url('../Assets/fonts/gothamRoundedL.otf') format('opentype');
+    src: url('Assets/fonts/gothamRoundedL.otf') format('opentype');
 }
 
 .system-status {
@@ -205,4 +207,5 @@ section.active {
     .main-footer {
         padding: 40px 8%;
     }
+
 }

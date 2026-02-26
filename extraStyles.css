@@ -183,33 +183,107 @@ section.active {
 }
 
 
-/* Mobile */
 @media (max-width: 768px) {
 
+    /* ----- Global Sections ----- */
+    section {
+        padding: 90px 6% !important;
+        min-height: auto !important;
+    }
+
+    body {
+        background: #f4f8fb url("Assets/bg_phone.png") center top / cover no-repeat fixed;
+    }
+
+    /* ----- Header ----- */
     header {
         flex-direction: column;
         padding: 15px 5%;
-    }
-
-    header .logo {
-        margin-bottom: 10px;
+        gap: 10px;
     }
 
     header nav {
-        width: 100%;
-        justify-content: center;
         gap: 18px;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     header nav a {
         font-size: 13px;
         letter-spacing: 1px;
     }
-}
 
-@media (max-width: 768px) {
+    /* ----- Hero Section ----- */
+    #hero {
+        margin-top: 90px;
+    }
 
+    #hero .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+        margin-top: 2em;
+    }
+
+    .hero-image {
+        width: 240px;
+        height: 240px;
+        margin-left: 0;
+    }
+
+    .system-status {
+        justify-content: center;
+        font-size: 13px;
+        letter-spacing: 1.5px;
+        margin-top: 0;
+    }
+
+    .data-grid div {
+        margin-left: 0;
+        font-size: 15px;
+    }
+
+    /* ----- About ----- */
+    .about-container,
+    .interests-container,
+    .resume-container,
+    .contact-container,
+    .skill-list-item,
+    .my-projects-list dl {
+        padding: 35px 20px;
+    }
+
+    .about-me {
+        font-size: 15px;
+        line-height: 1.8;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .about-me br {
+        display: none;
+    }
+
+    /* ----- Interests ----- */
+    .interests-main {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* ----- Skills ----- */
+    .list-skills {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* ----- Resume Buttons ----- */
+    .resume-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* ----- Projects (Disable Slider on Mobile) ----- */
     .my-projects-list {
         display: block;
         transform: none !important;
@@ -217,72 +291,49 @@ section.active {
 
     .my-projects-list dl {
         min-width: 100%;
-        margin: 0 0 30px 0;
+        margin: 0 0 25px 0;
     }
 
     .project-indicators {
         display: none;
     }
-}
 
-@media (max-width: 480px) {
-
-    .about-me,
-    .resume-description,
-    .my-projects-list dd,
-    .contact-intro {
-        font-size: 14px;
-        line-height: 1.7;
-    }
-
-    .skill-list-item {
-        padding: 35px;
-    }
-
-    .contact-container {
-        padding: 40px 25px;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .about-me {
-        font-size: 15px;
-        line-height: 1.8;
-    }
-
-    .about-me br {
-        display: none;
-    }
-
-    .about-me {
-        display: flex;
-        flex-direction: column;
+    /* ----- Contact ----- */
+    .contact-grid {
+        grid-template-columns: 1fr;
         gap: 25px;
     }
 
-    .about-me::before {
-        content: "";
-        width: 40px;
-        height: 2px;
-        background: var(--cyber-blue);
-        margin-bottom: 10px;
+    /* ----- Footer ----- */
+    .footer-container {
+        flex-direction: column;
+        gap: 35px;
     }
-}
 
-@media (max-width: 768px) {
-
-    body {
-        background: #f4f8fb url("Assets/bg_phone.png") center top / cover no-repeat fixed;
+    .footer-nav {
+        flex-wrap: wrap;
+        gap: 15px;
     }
 
 }
+
+
+/* =============================== */
+/* === TOUCH DEVICES (NO HOVER) === */
+/* =============================== */
 
 @media (hover: none) {
 
     *:hover {
         transform: none !important;
         box-shadow: none !important;
+    }
+
+    .my-projects-list dl:active,
+    .skill-list-item:active,
+    .resume-btn:active {
+        transform: scale(0.98);
+        transition: 0.1s ease;
     }
 
 }

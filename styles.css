@@ -67,7 +67,6 @@ section h1::before {
 }
 
 /* Header */
-/* Header */
 
 header {
     position: fixed;
@@ -161,6 +160,7 @@ section {
 .data-grid span {
     display: block;
     font-size: 14px;
+    letter-spacing: 2.5px;
     font-family: 'gothamUltra', sans-serif;
     font-weight: 700;
     color: #7fcfff;

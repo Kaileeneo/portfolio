@@ -575,24 +575,3 @@ section {
     font-size: 13px;
     color: var(--text-primary);
 }
-
-
-/* DO NOT REMOVE THIS TEMPLATE COPYRIGHT PART OR CHANGE IT, ELSE THERE WILL BE CONSEQUENCES */
-.template-credit {
-    margin-top: 15px;
-    font-family: 'gothamRoundedL', sans-serif;
-    font-weight: 600;
-    font-size: 11px !important;
-    letter-spacing: 1px;
-    opacity: 0.5;
-}
-
-.template-credit a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.template-credit a:hover {
-    text-decoration: underline;
-
-}

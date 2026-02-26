@@ -51,7 +51,8 @@
 .boot-text {
     font-family: 'gothamRoundedL', sans-serif;
     font-size: 40px;
-    font-weight: 900;
+    letter-spacing: 2px;
+    font-weight: 500;
     color: #00aaff;
     letter-spacing: 4px;
 }
